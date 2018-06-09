@@ -1,6 +1,6 @@
 # PROJECT NAME
 <p align="center">
-    <img src="https://github.com/jasonlong/vim-replacement-icon/blob/master/vim.png" width="256" align="middle">
+    <img src="https://github.com/thetomcraig/git_template/blob/master/mandala.png" width="256" align="middle">
 </p>
 
 ## What is this
