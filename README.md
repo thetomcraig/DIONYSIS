@@ -1,12 +1,14 @@
 # PROJECT NAME
 <p align="center">
-    <img src="https://github.com/thetomcraig/git_template/blob/master/mandala.png" width="256" align="middle">
+    <img src="https://github.com/thetomcraig/git_template/blob/master/project_icon.png" width="256" align="middle">
 </p>
 
 ## What is this
-PROJECT NAME is a ...
+Copy/Clone/Fork this repo to create new projects
+<Add description here>
 
 ### Usage
+To run...
 
 ### Deployment
 
