@@ -5,7 +5,7 @@
 
 ## What is this
 Copy/Clone/Fork this repo to create new projects
-<Add description here>
+Add description here
 
 ### Usage
 To run...
