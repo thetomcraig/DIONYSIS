@@ -2,7 +2,8 @@
 <p align="center">
     <img src="https://github.com/thetomcraig/git_template/blob/master/project_icon.jpg" width="256" align="middle">
 </p>
-### Usage
+
+### Usage  
 To use this tool run the setup script.  
 `./setup_project.sh`  
 The script will perform these steps:
