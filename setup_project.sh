@@ -19,12 +19,18 @@ git push --mirror $key
 
 cd ..
 git clone $key
+project_name="tmux-project-manager"
+cd $project_name
+mv template_readme.md README.md
+git add .
+git commit -m 'Add Readme for $project_name'
+git push
 
-echo "New project exists here: $PWD/$key"
 echo "Remove Template Dir? [y\N]"
 read answer
 if [ "$answer" == "y" ]
 then
   rm -rf $pwd
 fi
-echo "STARTING NEW PROJECT"
+echo "DONE"
+echo "NEW PROJECT EXISTS HERE: $PWD/$name"
