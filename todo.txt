@@ -1,0 +1,2 @@
+take the name out of the pasted in ssh key and make that the $name variable
+alter the readme being pasted, copy in the actual path to the icon
