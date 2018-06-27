@@ -1,2 +1,4 @@
 take the name out of the pasted in ssh key and make that the $name variable
 alter the readme being pasted, copy in the actual path to the icon
+remove setup_projects.sh from new repo
+prompt user about python, etc to decide what files like pip_requirements to add
