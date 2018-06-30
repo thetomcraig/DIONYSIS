@@ -3,7 +3,7 @@
     <img src="https://github.com/thetomcraig/git_template/blob/master/project_icon.jpg" width="256" align="middle">
 </p>
 This project contains files and utlities for kick starting software projects in Git.
-The included script will port the contents of _this_ repo to a brand new GitHub repo, ready for use.
+The included script will port the contents of this repo to a brand new GitHub repo, ready for use.
 
 ### Features
 The following are supplied with reasonable defaults:
