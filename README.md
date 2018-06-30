@@ -32,3 +32,5 @@ Burkert, Walter
 
 The Greek World by Anton Powell (Sep 28, 1997) ISBN 0415170427 page 494
 
+https://upload.wikimedia.org/wikipedia/commons/2/2d/Dionysos_kantharos_BM_B589.jpg
+
