@@ -1,8 +1,10 @@
 # DIONYSIS
 <p align="center">
     <img src="https://github.com/thetomcraig/git_template/blob/master/project_icon.jpg" width="256" align="middle">
-</p>
-> In Greek mythology Dionysus, the son of Zeus was torn to pieces by Titans. Zeus then destroyed the Titans by thunderbolt and Dionysus' grandmother Rhea managed to put some of his pieces back together and brought him back to life.  
+</p>  
+
+> In Greek mythology Dionysus, the son of Zeus was torn to pieces by Titans.  Zeus then destroyed the Titans by thunderbolt and Dionysus' grandmother Rhea managed to put some of his pieces back together and brought him back to life.  
+
 This project contains files and utlities for kick starting software projects in Git.  
 The included script will port the contents of this repo to a brand new GitHub repo, ready for use.  
 Optionally, the local clone of this repo will be destroyed.  
