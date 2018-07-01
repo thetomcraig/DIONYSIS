@@ -21,7 +21,7 @@ curl -u $username https://api.github.com/user/repos -d "{\"name\": \"$project_na
 git remote add origin git@github.com:$username/$project_name.git
 git push -u origin master
 echo "DONE"
-open https://github.com/thetomcraig/$project_name
+open https://github.com/$username/$project_name
 
 echo "Remove Template Dir? [y\N]"
 read answer
