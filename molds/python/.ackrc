@@ -1,0 +1,12 @@
+--sort-files
+--color
+
+--ignore-file=is:tags
+--ignore-file=is:.coverage
+
+--ignore-file=match:.*\.pyc
+--ignore-file=match:.*\.sw.*
+
+--ignore-dir=htmlcov
+--ignore-dir=build
+--ignore-dir=env
