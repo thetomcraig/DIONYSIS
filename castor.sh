@@ -11,14 +11,14 @@ get_username_and_password ()
   # If credentials are there, do nothing
   if [ -f $credentials_file ]; then
     github_username=`sed -n 1p ${credentials_file}`
-    github_password=`sed -n 2p ${credentials_file}`
+    # github_password=`sed -n 2p ${credentials_file}`
     return
   fi
   # Othersie, prmopt user; write to file
   echo -n "Github username: "
   read github_username
-  echo -n "Github password: "
-  read -s github_password
+  # echo -n "Github password: "
+  # read -s github_password
 
   echo "Save username locally?"
   read -p "$1 [y/N]: " yn
@@ -28,7 +28,7 @@ get_username_and_password ()
   case $yn in
       [Yy] ) 
         echo $github_username > $credentials_file
-        echo $github_password >> $credentials_file
+        # echo $github_password >> $credentials_file
         echo "Saved"
         return
       ;;
@@ -66,31 +66,28 @@ cast_new_project() {
 
     # Init git and copy appropriate mold
     git init
-    ls $DIR/molds/$type/*
-    ls $DIR/molds/$type/.*
-    # cp -r $DIR/molds/$type/* .
-    # cp -r $DIR/molds/$type/.* .
+    ls -al $DIR/molds/$type/
+    cp -r $DIR/molds/$type/ .
     cp -r $DIR/molds/.editorconfig .
     git add . >> /dev/null
     git commit -m "Started project, ${project_name}">> /dev/null
-  }
-  # } &> /dev/null
+  } &> /dev/null
 
   echo "Casted"
-  # get_username_and_password
-  # echo "Pushing cast..."
+  get_username_and_password
+  echo "Pushing cast..."
 
-  # # Push to remote
-  # curl -u $github_username https://api.github.com/user/repos -d "{\"name\": \"$project_name\"}"
-  # {
-    # git remote add origin git@github.com:$github_username/$project_name.git
-    # git push -u origin master
-  # } &> 2
-  # echo "Cast pushed"
+  # Push to remote
+  curl -u $github_username https://api.github.com/user/repos -d "{\"name\": \"$project_name\"}"
+  {
+    git remote add origin git@github.com:$github_username/$project_name.git
+    git push -u origin master
+  } &> 2
+  echo "Cast pushed"
 
-  # echo "Opening remote..."
-  # sleep 1s
-  # open https://github.com/$github_username/$project_name
+  echo "Opening remote..."
+  sleep 1s
+  open https://github.com/$github_username/$project_name
 }
 
 if [ $# -eq 0 ]
