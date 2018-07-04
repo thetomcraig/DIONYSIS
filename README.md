@@ -26,11 +26,4 @@ The script will perform these steps:
   3. Optionally delete this repo locally
 
 ### Credits
-Burkert, Walter
-1979. Structure and History in Greek Mythology and Ritual. London: University of California Press.
-1987. Ancient Mystery Cults. Cambridge, Mass.: Harvard UP. ISBN 0-674-03386-8
-
-The Greek World by Anton Powell (Sep 28, 1997) ISBN 0415170427 page 494
-
-https://upload.wikimedia.org/wikipedia/commons/2/2d/Dionysos_kantharos_BM_B589.jpg
-
+https://upload.wikimedia.org/wikipedia/commons/2/20/Kastor_Niobid_krater_Louvre_G341.jpg
