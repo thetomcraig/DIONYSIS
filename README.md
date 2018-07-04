@@ -1,5 +1,6 @@
 # CASTOR
 <p align="center">
+    <img src="https://github.com/thetomcraig/CASTOR/blob/master/project_icon.jpg" width="256" align="middle">
 </p>  
 
 
