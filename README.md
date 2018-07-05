@@ -1,12 +1,12 @@
 # CASTOR
 <p align="center">
-    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/castor.png" width="128" align="middle">
+    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/castor.jpg" width="128" align="middle">
 </p>  
 <p align="center">
-    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/python.png" width="32" align="middle">
-    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/bash.png" width="32" align="middle">
-    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/vim.png" width="32" align="middle">
-    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/plain_text.png" width="32" align="middle">
+    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/python.png" width="64" align="middle">
+    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/bash.png" width="64" align="middle">
+    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/vim.png" width="64" align="middle">
+    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/plain_text.png" width="64" align="middle">
 </p>  
 
 
