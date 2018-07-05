@@ -7,7 +7,7 @@ COMMAND() {
   echo "Got this argument $1"
 }
 
-help_string_function() {
+helpStringFunction() {
   echo "usage:  castor [option]"
   echo "Options and arguments:"
   echo "--COMMAND : show this help message"
@@ -16,7 +16,7 @@ help_string_function() {
 
 case $1 in
     -h*|--help)
-      help_string_function
+      helpStringFunction
       localBranch
     ;;
     -c|--cast|--create)
@@ -24,6 +24,6 @@ case $1 in
     ;;
     *)
       echo "Option not recognized ($1);"
-      help_string_function
+      helpStringFunction
     ;;
 esac
