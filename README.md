@@ -9,28 +9,43 @@
     <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/plain_text.png" width="64" align="middle">
 </p>  
 
+Creating new projects shouldn't be boring!  
+Castor can create (or `cast`) new projects like a champ.  
 
-This project contains files and utlities for kick starting software projects in Git.  
-The included script will port the contents of this repo to a brand new GitHub repo, ready for use.  
-Optionally, the local clone of this repo will be destroyed.  
+## Features
+Castor performs the following steps:  
+  * Creates a new folder with the project name specified
+  * `Casts` the new project using one of the available `molds`
+    * Moves the default files into the new projects folder
+    * Commits them with git
+    * Pushes to your GitHub account; creating the remote repo
 
+Curently the following molds exist,  
+With sensible defaults:  
+  * Python
+    * requirements.txt
+  * Bash/sh
+    * Helper Functions
+  * Vimscript
+  * Plain Text
 
-### Features
-The following are supplied with reasonable defaults:
+Each new project casted will also contain:  
+  * READEM.md
+  * .gitignore
   * .ackrc
   * .agignore
   * .editorconfig
-  * .gitignore
-  * pip_requirements.txt
-  * project_icon.jpg
 
-### Usage  
-To use this tool run the setup script.  
-`./setup_project.sh`  
-The script will perform these steps:
-  1. Prompt you to make a blank GitHub repo
-  2. Mirror push this repo to that new repo
-  3. Optionally delete this repo locally
+## Quick Start
+Castor has `molds` for each type of project.  
+Castor with `cast` a new project using the mold you specify.  
+For example, making a new python project:  
+```
+./castor --cast test_project
+```
+
+## Usage
+
 
 ### Credits
 Castor image: https://upload.wikimedia.org/wikipedia/commons/2/20/Kastor_Niobid_krater_Louvre_G341.jpg
