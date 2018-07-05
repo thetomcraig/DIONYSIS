@@ -98,8 +98,8 @@ fi
 help_string_function() {
   echo "usage:  castor [option]"
   echo "Options and arguments:"
-  echo "-h|--help          : show this help message"
-  echo "-c|--cast|--create : show this help message"
+  echo "-h|--help                 : show this help message"
+  echo "-c|--cast|--create <NAME> : cast new project"
 }
 
 case $1 in
