@@ -7,6 +7,7 @@
     <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/bash.png" width="64" align="middle">
     <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/vim.png" width="64" align="middle">
     <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/plain_text.png" width="64" align="middle">
+    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/js.png" width="64" align="middle">
 </p>  
 
 Creating new projects shouldn't be boring!  
@@ -68,3 +69,4 @@ Language Icons:
   * Bash: http://www.iconarchive.com/show/enkel-icons-by-froyoshark/iTerm-icon.html
   * Plain Text: http://www.iconarchive.com/show/ios7-style-icons-by-matiasam/Text-icon.html
   * Python: http://www.iconarchive.com/show/papirus-apps-icons-by-papirus-team/python-icon.html
+  * JS: http://www.iconarchive.com/show/mnemo-icons-by-hechiceroo/js-icon.html
