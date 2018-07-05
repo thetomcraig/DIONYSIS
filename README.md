@@ -1,13 +1,12 @@
 # CASTOR
 <p align="center">
-    <img src="https://github.com/thetomcraig/CASTOR/blob/master/project_icon.jpg" width="256" align="middle">
+    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/castor.png" width="128" align="middle">
 </p>  
-<p>  
-        <!-- in your header -->
-        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-        <!-- in your body -->
-        <i class="devicon-vim-plain colored"></i>
+<p align="center">
+    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/python.png" width="32" align="middle">
+    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/bash.png" width="32" align="middle">
+    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/vim.png" width="32" align="middle">
+    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/plain_text.png" width="32" align="middle">
 </p>  
 
 
@@ -34,4 +33,9 @@ The script will perform these steps:
   3. Optionally delete this repo locally
 
 ### Credits
-https://upload.wikimedia.org/wikipedia/commons/2/20/Kastor_Niobid_krater_Louvre_G341.jpg
+Castor image: https://upload.wikimedia.org/wikipedia/commons/2/20/Kastor_Niobid_krater_Louvre_G341.jpg
+Language Icons:
+  Vim: http://www.iconarchive.com/show/papirus-apps-icons-by-papirus-team/vim-icon.html
+  Bash: http://www.iconarchive.com/show/enkel-icons-by-froyoshark/iTerm-icon.html
+  Plain Text: http://www.iconarchive.com/show/ios7-style-icons-by-matiasam/Text-icon.html
+  Python: http://www.iconarchive.com/show/papirus-apps-icons-by-papirus-team/python-icon.html
