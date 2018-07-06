@@ -74,7 +74,6 @@ cast_new_project() {
   # Run specific mold script
   ./initialize_project.sh $project_name
   rm initialize_project.sh
-  exit 0
 
   # Add everything for pushing
   {
