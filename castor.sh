@@ -43,7 +43,7 @@ get_username_and_password ()
 
 cast_new_project() {
   # Array to capture user input
-  declare -A projects=(['1']=python
+  declare -A projects=(['1']=python/django
                        ['2']=bash
                        ['3']=plain_text)
 
@@ -69,7 +69,15 @@ cast_new_project() {
     ls -al $DIR/molds/$type/
     cp -r $DIR/molds/$type/ .
     cp -r $DIR/molds/.editorconfig .
-    git add . >> /dev/null
+  } &> /dev/null
+
+  # Run specific mold script
+  ./initialize_project.sh $project_name
+  exit 0
+
+  # Add everything for pushing
+  {
+    git add .
     git commit -m "Started project, ${project_name}">> /dev/null
   } &> /dev/null
 
