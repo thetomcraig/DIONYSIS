@@ -4,10 +4,12 @@ django-admin --version &> /dev/null
 if [ $? != 0 ]; then
   exit 1
 fi
-
-virtualenv env
-source env/bin/activate
-pip install -r requirements.txt
-
-django-admin startproject $project_name
+echo "Creating Virtualenv..."
+virtualenv env >> /dev/null
+source env/bin/activate >> /dev/null
+echo "Pip Installing..."
+pip install -r requirements.txt >> /dev/null
+echo "Creating Django Project"
+django-admin startproject $project_name >> /dev/null
+echo "DONE"
 

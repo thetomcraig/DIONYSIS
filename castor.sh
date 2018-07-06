@@ -43,7 +43,7 @@ get_username_and_password ()
 
 cast_new_project() {
   # Array to capture user input
-  declare -A projects=(['1']=python/django
+  declare -A projects=(['1']=python
                        ['2']=bash
                        ['3']=plain_text)
 
@@ -51,7 +51,7 @@ cast_new_project() {
   echo "starting new project, ${project_name}"
 
   echo "What type of project is this?"
-  echo "  [1] Python
+  echo "  [1] Python/Django
   [2] Bash
   [3] Plain Text (Default)"
   read choice
@@ -60,11 +60,11 @@ cast_new_project() {
   # Create new dir with the given name
   echo "Casting from mold..."
   cd ..
+  mkdir $project_name
+  cd $project_name
+  
+  # Init git and copy appropriate mold
   {
-    mkdir $project_name
-    cd $project_name
-
-    # Init git and copy appropriate mold
     git init
     ls -al $DIR/molds/$type/
     cp -r $DIR/molds/$type/ .
@@ -73,6 +73,7 @@ cast_new_project() {
 
   # Run specific mold script
   ./initialize_project.sh $project_name
+  rm initialize_project.sh
   exit 0
 
   # Add everything for pushing
