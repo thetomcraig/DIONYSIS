@@ -1,8 +1,34 @@
 #!/usr/bin/env bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-function get_rtrn(){
-    echo `echo $1|cut --delimiter=, -f $2`
+update_readme() {
+  readme_file=${1}
+  project_name=${2}
+
+  declare -A replacement_dictionary
+  replacement_dictionary["<PROJECT NAME>"]="${project_name}"
+  # Array of lines for the new readme file
+  new_readme_array=()
+  # Backup the xml file
+  cd ${project_name}
+  cp "README.md" "README.md.bak"
+  # Read the readme into an array of lines
+  readarray readme_file_lines_array < ${readme_file}
+  # Make necessary replacements
+  for key in "${readme_file_lines_array[@]}";
+  do
+    for replacement_key in "${!replacement_dictionary[@]}"
+    do
+      replacement_value=${replacement_dictionary[$replacement_key]}
+      key=${key/$replacement_key/$replacement_value}
+    done
+    new_readme_array+=("$key")
+  done
+  printf '%s' "${new_readme_array[@]}" > "${readme_file}.new"
+  # Everything is good; replace
+  mv "${readme_file}.new" "${readme_file}"
+# Cleanup
+  rm "${readme_file}.bak"
 }
 
 get_username_and_password ()
@@ -26,13 +52,13 @@ get_username_and_password ()
     yn='N'
   fi
   case $yn in
-      [Yy] ) 
+      [Yy] )
         echo $github_username > $credentials_file
         # echo $github_password >> $credentials_file
         echo "Saved"
         return
       ;;
-      [Nn] ) 
+      [Nn] )
         return
       ;;
       *)
@@ -60,17 +86,14 @@ cast_new_project() {
   # Create new dir with the given name
   echo "Casting from mold..."
   cd ..
-  mkdir $project_name
-  cd $project_name
-  
-  # Init git and copy appropriate mold
-  {
-    git init
-    ls -al $DIR/molds/$type/
-    cp -r $DIR/molds/$type/ .
-    cp -r $DIR/molds/.editorconfig .
-  } &> /dev/null
 
+  # Init git and copy appropriate mold
+  # git init
+  cp -r $DIR/molds/$type ./${project_name}
+  cp -r $DIR/molds/.editorconfig .
+  update_readme ./README.md ${project_name}
+
+  exit 1
   # Run specific mold script
   ./initialize_project.sh $project_name
   rm initialize_project.sh
@@ -87,10 +110,8 @@ cast_new_project() {
 
   # Push to remote
   curl -u $github_username https://api.github.com/user/repos -d "{\"name\": \"$project_name\"}"
-  {
-    git remote add origin git@github.com:$github_username/$project_name.git
-    git push -u origin master
-  } &> 2
+  git remote add origin git@github.com:$github_username/$project_name.git
+  git push -u origin master
   echo "Cast pushed"
 
   echo "Opening remote..."
