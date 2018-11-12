@@ -1,13 +1,6 @@
-# CASTOR
+# castor
 <p align="center">
-    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/castor.jpg" width="256" align="middle">
-</p>  
-<p align="center">
-    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/python.png" width="64" align="middle">
-    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/bash.png" width="64" align="middle">
-    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/vim.png" width="64" align="middle">
-    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/plain_text.png" width="64" align="middle">
-    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/js.png" width="64" align="middle">
+    <img src="images/pudding.png" width="256" align="middle">
 </p>  
 
 Creating new projects shouldn't be boring!  
