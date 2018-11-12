@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source ${DIR}/helper_functions.sh
+CWD="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+. $CWD/helper_functions.sh
 
 COMMAND() {
   echo "Got this argument $1"
@@ -20,7 +20,7 @@ case $1 in
       localBranch
     ;;
     -c|--cast|--create)
-      COMMAND $2
+      COMMAND "${2}"
     ;;
     *)
       echo "Option not recognized ($1);"
