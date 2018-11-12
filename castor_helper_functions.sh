@@ -20,7 +20,7 @@ cast_new_project() {
   declare -A project_type_choice_list
   project_type_choice_list["1"]="plain_text"
   project_type_choice_list["2"]="bash"
-  project_type_choice_list["3"]="python (django)"
+  project_type_choice_list["3"]="python"
   # Prompt user for the type of project they want to make
   type_from_user=$(get_choice_from_user "What type of project is this?" "project_type_choice_list" "1")
   upper_choice=$(echo "${type_from_user}" | awk '{print toupper($0)}')
