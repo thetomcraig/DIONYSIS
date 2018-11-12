@@ -1,3 +1,6 @@
 .credentials
 .DS_Store
 *.sw*
+
+github_username.txt
+github_otp_code.txt
