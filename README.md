@@ -1,6 +1,6 @@
 # castor
 <p align="center">
-    <img src="images/pudding.png" width="256" align="middle">
+    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/pudding.png" width="256" align="middle">
 </p>  
 
 Creating new projects shouldn't be boring!  
@@ -56,10 +56,4 @@ Opening remote...
 
 
 ### Credits
-Castor image: https://upload.wikimedia.org/wikipedia/commons/2/20/Kastor_Niobid_krater_Louvre_G341.jpg
-Language Icons:
-  * Vim: http://www.iconarchive.com/show/papirus-apps-icons-by-papirus-team/vim-icon.html
-  * Bash: http://www.iconarchive.com/show/enkel-icons-by-froyoshark/iTerm-icon.html
-  * Plain Text: http://www.iconarchive.com/show/ios7-style-icons-by-matiasam/Text-icon.html
-  * Python: http://www.iconarchive.com/show/papirus-apps-icons-by-papirus-team/python-icon.html
-  * JS: http://www.iconarchive.com/show/mnemo-icons-by-hechiceroo/js-icon.html
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
