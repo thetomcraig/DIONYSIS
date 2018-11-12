@@ -64,7 +64,7 @@ stage_and_push_to_github() {
 
   # Get the credentials needed to push
   github_username=$(get_saved_setting "github_username.txt" "GitHub username?] ")
-  otp_code=$(get_saved_setting "github_otp_code.txt" "OTP (2FA) Code for GitHub?] ")
+  otp_code=$(get_saved_setting "github_otp_code.txt" "OTP (2FA) Code for GitHub? (Optional)] ")
   echo "${otp_code}"
   # Construct the curl command used to push
   # Ugly backslashed are for quote escaping in json
