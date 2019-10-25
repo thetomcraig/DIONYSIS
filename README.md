@@ -1,7 +1,8 @@
 # castor
 <p align="center">
-    <img src="https://github.com/thetomcraig/CASTOR/blob/master/images/pudding.png" width="256" align="middle">
-</p>  
+    <img src="images/c.png" width="64" align="middle">
+</p>
+
 
 Creating new projects shouldn't be boring!  
 Castor can create (or `cast`) new projects like a champ.  

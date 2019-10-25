@@ -141,3 +141,38 @@ open_on_github() {
   sleep 1s
   open https://github.com/"${github_username}"/"${name}"
 }
+
+
+
+
+
+
+
+
+
+create_issue() {
+  title="${1}"
+  body="${1}"
+
+  # Get the credentials needed to push
+  github_usertitle=$(get_saved_setting "github_usertitle.txt" "GitHub username?] ")
+  otp_code=$(get_saved_setting "github_otp_code.txt" "OTP (2FA) Code for GitHub? (Optional)] ")
+  # Construct the curl command used to push
+  # Ugly backslashes are for quote escaping in json
+  usertitle_section="curl -s -u ${github_usertitle}" 
+  header_section="" 
+  if [[ ! -z "${otp_code}" ]]; then
+    header_section="-H \"Authorization: token ${otp_code}\""
+  fi
+  data_section="-X POST -d \"{\\\"title\\\": \\\"$title\\\"}\""
+  url_section="https://api.github.com/user/repos"
+  # Execute the github curl command
+  github_curl_command="${usertitle_section} ${header_section} ${data_section} ${url_section}"
+  eval "${github_curl_command}"
+
+  # Now that the remote GitHub repo hasbeen created, associate with the local git project
+  # Finally, push
+  {
+    git remote add origin git@github.com:"${github_username}"/"${title}".git
+  } &> /dev/null
+}

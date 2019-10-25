@@ -9,6 +9,7 @@ help_string_function() {
   echo "Options and arguments:"
   echo "-h|--help                 : show this help message"
   echo "-c|--cast|--create <NAME> : cast new project"
+  echo "-i|--issue <NAME>         : create new issue"
 }
 
 # Interpret the user input
@@ -24,6 +25,9 @@ case $1 in
 -c | --cast | --create)
   # Call the helper function to do the thing
   cast_new_project "${2}"
+  ;;
+-i | --issue)
+  create_issue "${2}"
   ;;
 *)
   echo "Option not recognized ($1);"
